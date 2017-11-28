@@ -11,13 +11,13 @@ class MysqlDB{
 		$this->user=$user;
 		$this->pass=$pass;
 		$this->db=$db;
-		$this->getConn();
+		$this->conn();
 	}
 	
-	public function getConn(){
+	public function conn(){
 		$this->conn=new mysqli($this->server, $this->user, $this->pass, $this->db);
 		if($this->conn->connect_error){
-			die("Mysql connection failed".$this->conn->connect_error);
+// 			die("Mysql connection failed".$this->conn->connect_error);
 		}else{
 // 			echo "Connected successfully<br/>";
 		}
@@ -25,6 +25,10 @@ class MysqlDB{
 	
 	public function disConn(){
 		$this->conn->close();
+	}
+	
+	public function getConn(){
+		return $this->conn;
 	}
 	
 	public function selectAll(){

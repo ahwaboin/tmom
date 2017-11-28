@@ -32,7 +32,7 @@
 			
 			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			      <ul class="nav navbar-nav navbar-right">
-			        <li><a href="datamove.php">Data Move</a></li>
+			        <li><a href="dmora.php">Data Move</a></li>
 			        <li><a href="#">Oracle</a></li>
 			        <li><a href="#">Mysql</a></li>
 			      </ul>

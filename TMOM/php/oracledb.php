@@ -11,13 +11,13 @@ class OracleDB{
 		$this->user=$user;
 		$this->pass=$pass;
 		$this->dbPath=$db;
-		$this->getConn();
+		$this->conn();
 	}
 	
-	public function getConn(){
+	public function conn(){
 		$this->conn=@oci_connect($this->user,$this->pass,$this->dbPath,$this->charSet);
 		if(!$this->conn){
-			echo "No Connection ".oci_error();
+// 			echo "No Connection ".oci_error();
 		}else{
 // 			echo "Connected successfully<br/>";
 		}
@@ -43,6 +43,10 @@ class OracleDB{
 		oci_free_statement($result);
 // 		print_r($rows);
 		return $rows;
+	}
+	
+	public function getConn(){
+		return $this->conn;
 	}
 }
 
