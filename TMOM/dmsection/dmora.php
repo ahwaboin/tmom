@@ -1,5 +1,5 @@
 <?php 
-include 'header.php';
+include '../basephp/header.php';
 ?>
 <section>
 	<div class="container">
@@ -49,5 +49,5 @@ include 'header.php';
 	</div>
 </section>
 <?php 
-include 'footer.php';
+include '../basephp/footer.php';
 ?>

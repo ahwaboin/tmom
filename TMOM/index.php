@@ -1,5 +1,5 @@
 <?php 
-include 'header.php';
+include 'basephp/header.php';
 ?>
 
 <section>
@@ -7,12 +7,12 @@ include 'header.php';
 		<div class="jumbotron">
 		  <h1>Welcom TMOM!</h1>
 		  <p>This is Tuple Mover Oracle to Mysql. <span class="label label-primary">New</span></p>
-		  <p><a class="btn btn-primary btn-lg" href="dmora.php" role="button">Go!</a></p>
+		  <p><a class="btn btn-primary btn-lg" href="dmsection/dmora.php" role="button">Go!</a></p>
 	  </div>
 	</div>
 
 </section>
 
 <?php 
-include 'footer.php';
+include 'basephp/footer.php';
 ?>

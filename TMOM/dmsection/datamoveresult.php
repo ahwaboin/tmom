@@ -1,5 +1,5 @@
 <?php 
-include 'header.php';
+include '../basephp/header.php';
 ?>
 <?php
 foreach($_POST as $key=>$value) {
@@ -25,5 +25,5 @@ $oracleDB->disConn();
 $mysql->disConn();
 ?>
 <?php 
-include 'footer.php';
+include '../basephp/footer.php';
 ?>
