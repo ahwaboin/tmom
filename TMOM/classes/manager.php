@@ -7,7 +7,7 @@
 	//oracle db 인스턴스 생성
 	//$oracleDB=new OracleDB("test1234","test1234","192.168.0.141/oracle9i");
 	//mysql db 인스턴스 생성
-	//$mysql=new MysqlDB("localhost", "root", "root", "test1234");
+	//$mysqlDB=new MysqlDB("localhost", "root", "root", "test1234");
 	//매니저 인스턴스 생성
 	//$manager=new Manager($mysql);
 	//오라클 디비에서 데이터 가져오기
@@ -17,7 +17,7 @@
 	//$manager->move("test1234","ADDR",$oracleData);
 	//db 닫기
 	//$oracleDB->disConn();
-	//$mysql->disConn();
+	//mysqli_close($mysqlDB->getConn());
 
 	include 'mysqldb.php';
 	include 'oracledb.php';

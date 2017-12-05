@@ -11,20 +11,21 @@ class MysqlDB{
 		$this->user=$user;
 		$this->pass=$pass;
 		$this->db=$db;
-		$this->conn();
+// 		$this->conn=$this->conn();
 	}
 	
 	public function conn(){
 		$this->conn=new mysqli($this->server, $this->user, $this->pass, $this->db);
 		if($this->conn->connect_error){
-// 			die("Mysql connection failed".$this->conn->connect_error);
+			return "failed";
 		}else{
-// 			echo "Connected successfully<br/>";
+			return "success";
 		}
 	}
 	
 	public function disConn(){
-		$this->conn->close();
+// 		$this->conn->close();
+		mysqli_close($this->conn());
 	}
 	
 	public function getConn(){

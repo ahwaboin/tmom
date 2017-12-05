@@ -7,3 +7,10 @@ include_once '../basephp/header.php';
 <?php 
 include_once '../basephp/footer.php';
 ?>
+
+setion tag
+<div class="container">
+	<div class="page-header">
+		<h2>Oracle <small>section</small></h2>
+	</div>
+</div>

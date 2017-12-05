@@ -22,20 +22,30 @@ if($_POST["oracleUser"]){
 		}
 ?>
 </div>
-
+<div class="container">
 <?php 
+echo "debug";
 //oracle db 인스턴스 생성
 $oracleDB=new OracleDB("test1234","test1234","192.168.0.141/oracle9i");
+if(!$oracleDB->getConn()){
+	echo "f";
+}else{
+	echo "s";
+}
+$selectAll=$oracleDB->selectAll();
 
-if($oracleDB->getConn()){
+print_r($selectAll);
+
+if(!$oracleDB->getConn()){
+	echo "f";
+}else{
 	echo "s";
 }
 
-echo "s";
 
 $oracleDB->disConn();
 ?>
-
+</div>
 <?php 
 include_once '../basephp/footer.php';
 ?>
