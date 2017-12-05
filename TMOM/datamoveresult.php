@@ -7,7 +7,7 @@ foreach($_POST as $key=>$value) {
 }
 ?>
 <?php 
-include 'php/manager.php';
+include 'classes/php/manager.php';
 //Useage:
 //oracle db 인스턴스 생성
 $oracleDB=new OracleDB("test1234","test1234","192.168.0.141/oracle9i");
