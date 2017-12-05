@@ -35,9 +35,9 @@
 			
 			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			      <ul class="nav navbar-nav navbar-right">
-			        <li><a href="dmsection/dmora.php">Data Move</a></li>
-			        <li><a href="#">Oracle</a></li>
+			        <li><a href="orasection/connora.php">Oracle</a></li>
 			        <li><a href="#">Mysql</a></li>
+			        <li><a href="dmsection/dmora.php">Data Move</a></li>
 			      </ul>
 			    </div><!-- /.navbar-collapse -->
 			  </div><!-- /.container-fluid -->

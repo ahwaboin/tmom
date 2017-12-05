@@ -1,0 +1,9 @@
+in folder file
+
+<?php 
+include_once '../basephp/header.php';
+?>
+
+<?php 
+include_once '../basephp/footer.php';
+?>
