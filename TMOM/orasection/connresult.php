@@ -24,14 +24,15 @@ if($_POST["oracleUser"]){
 </div>
 <div class="container">
 <?php 
-echo "debug";
-//oracle db 인스턴스 생성
+//oracle 접속
 $oracleDB=new OracleDB("test1234","test1234","192.168.0.141/oracle9i");
-if(!$oracleDB->getConn()){
+$oracleStatus=$oracleDB->conn();
+if($oracleStatus=="failed"){
 	echo "f";
 }else{
 	echo "s";
 }
+
 $selectAll=$oracleDB->selectAll();
 
 print_r($selectAll);

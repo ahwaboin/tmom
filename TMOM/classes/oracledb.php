@@ -11,15 +11,17 @@ class OracleDB{
 		$this->user=$user;
 		$this->pass=$pass;
 		$this->dbPath=$db;
-		$this->conn();
+// 		$this->conn();
 	}
 	
 	public function conn(){
 		$this->conn=@oci_connect($this->user,$this->pass,$this->dbPath,$this->charSet);
 		if(!$this->conn){
 // 			echo "No Connection ".oci_error();
+			return "failed";
 		}else{
 // 			echo "Connected successfully<br/>";
+			return "success";
 		}
 	}
 	
