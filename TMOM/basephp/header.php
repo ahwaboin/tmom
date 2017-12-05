@@ -7,7 +7,7 @@
     <title>TMOM - Tuple Mover Oracle to Mysql</title>
 
     <!-- 부트스트랩 -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
 
     <!-- IE8 에서 HTML5 요소와 미디어 쿼리를 위한 HTML5 shim 와 Respond.js -->
     <!-- WARNING: Respond.js 는 당신이 file:// 을 통해 페이지를 볼 때는 동작하지 않습니다. -->
@@ -27,12 +27,12 @@
 			        <span class="icon-bar"></span>
 			        <span class="icon-bar"></span>
 			      </button>
-			      <a class="navbar-brand" href="index.php">TMOM</a>
+			      <a class="navbar-brand" href="../index.php">TMOM</a>
 			    </div>
 			
 			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			      <ul class="nav navbar-nav navbar-right">
-			        <li><a href="dmora.php">Data Move</a></li>
+			        <li><a href="dmsection/dmora.php">Data Move</a></li>
 			        <li><a href="#">Oracle</a></li>
 			        <li><a href="#">Mysql</a></li>
 			      </ul>
